@@ -12,7 +12,7 @@ export default function Home() {
     return (
         < section
             id="home"
-            className="relative min-h-screen"
+            className="relative min-h-screen flex justify-center"
             data-testid="hero-section"
         >
             < div
@@ -33,26 +33,23 @@ export default function Home() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.3, duration: 0.7 }}
-                    className="flex items-center gap-3 mb-6"
+                    className="flex items-center gap-3 mb-0"
                 >
                     <div className="h-px w-8 bg-[#E71D36]" />
                     <span className="st-mono text-xs tracking-[0.4em] text-[#E71D36] uppercase">
                         Hawkins, Indiana — 1983
                     </span>
                 </motion.div >
-
-            
                 <motion.h1 
                     initial={{ y: 30, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{delay:0.5, duration:0.9}}
-                    className="st-heading text-white text-5xl sm:text-6xl lg:text-8xl leading=[0.9] mb-6 max-w-3xl ">
-                    <br />
+                    className="st-heading text-white text-5xl sm:text-6xl lg:text-8xl leading=[0.9] mt-8 mb-5 max-w-3xl ">
                     <span >
                         WHERE
                     </span>
                     <br />
-                    <span className="glitch-text text-[#E71D36]">
+                    <span className="darkness-flicker text-[#E71D36]">
                         DARKNESS
                     </span>
                     <br />
@@ -91,15 +88,10 @@ export default function Home() {
                         whileTap={{ scale: 0.97 }}
                         className= " bg-transparent border border-white/20 text-white st-mono text-xs tracking-[0.25em] uppercase py-3 px-8 hover:bg-white/5"
                     >
-
                         Season Guide
                     </motion.button>
                 </motion.div>
-
-
-
                 
-
             </div>
         </section >
     );
